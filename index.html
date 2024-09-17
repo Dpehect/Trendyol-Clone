@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Search Box with Icon Inside</title>
+        <!-- Bootstrap CSS -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+        <!-- External CSS File -->
+        <link rel="stylesheet" href="style.css">
+        <!-- Font Awesome CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+      </head>
+      
+<body>
+
+  <!-- Tek Banner (Slider) -->
+  <div id="topBannerCarousel" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/tbanner1.webp" class="d-block w-100" alt="Banner 1">
+      </div>
+    </div>
+  </div>
+
+  <!-- Header üst kısmı -->
+
+<div class="wrapper">
+    <div class="header-top">
+      <ul class="right">
+        <!-- İki textin yerini değiştirdik -->
+        <li><a href="/yardim/sorular">Yardım &amp; Destek</a></li>
+        <li><a href="/Hesabim/IndirimKuponlari">İndirim Kuponlarım</a></li>
+      </ul>
+    </div>
+  </div>
+  
+<!-- Topbar (Navbar) -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid d-flex justify-content-center align-items-center">
+      <!-- Sol tarafta resim ve hemen yanında arama kutusu -->
+      <img src="images/tymilla.svg" alt="Logo" style="width: 182px; height: 20px; margin-right: 20px;">
+      
+      <!-- Arama kutusu -->
+      <div class="custom-search-container w-100">
+        <form class="w-100">
+          <div class="input-group">
+            <input type="text" class="form-control search-input" placeholder="Aradığınız ürün, kategori veya markayı yazınız" aria-label="Search">
+            <!-- Arama kutusunun sağında ikon ve yazı -->
+            <div class="input-group-append">
+              <span class="input-group-text">
+                <i class="fas fa-user"></i> Hesabım
+              </span>
+              <span class="input-group-text">
+                <i class="far fa-heart heart-icon"></i>
+                <i class="fas fa-heart heart-icon-filled"></i> Favorilerim
+              </span>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </nav>
+  
+  
+  
+  
+
+  <!-- Optional JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

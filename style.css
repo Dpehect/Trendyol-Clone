@@ -1,0 +1,131 @@
+/* Header Üst Kısmı (Topbar'ın Üstü) */
+.header-top ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header-top ul li {
+    margin-left: 20px;
+}
+
+.header-top ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 0.9rem;
+}
+
+.header-top ul li a:hover {
+    color: #007bff;
+}
+
+/* Topbar (Resim ve Arama Kutusu) */
+.navbar {
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Arama kutusu için genişlik ve yükseklik ayarı */
+.custom-search-container {
+    max-width: 800px; /* Genişliği artırdık */
+    width: 100%; /* Esnek yapı */
+}
+
+.search-input {
+    background: url('images/search.png') no-repeat right 10px center;
+    background-size: 18px 18px;
+    padding-right: 40px;
+    height: 35px; /* Yüksekliği azalttık */
+    width: 100%; /* Genişlik tam */
+    transition: width 0.3s;
+}
+
+.search-input::placeholder {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+/* Resim ve arama kutusunun hizalanması */
+.container-fluid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar img {
+    margin-right: 20px; /* Resim ile arama kutusu arasındaki boşluk */
+}
+
+/* Responsive ayarlar */
+@media (max-width: 992px) {
+    .custom-search-container {
+        max-width: 600px; /* Orta ekranlar için genişliği azalttık */
+    }
+
+    .search-input {
+        height: 30px; /* Orta ekranlar için yüksekliği azalttık */
+    }
+}
+
+@media (max-width: 768px) {
+    .custom-search-container {
+        max-width: 100%; /* Küçük ekranlarda tam genişlik */
+    }
+
+    .search-input {
+        height: 28px; /* Küçük ekranlar için daha düşük yükseklik */
+    }
+
+    .navbar img {
+        width: 150px; /* Küçük ekranlar için logo boyutunu küçülttük */
+    }
+}
+
+
+
+
+/* İkon ve Arama Kutusundaki Butonlar */
+.input-group-text {
+    background-color: transparent;
+    border: none;
+    color: #333;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.input-group-text .heart-icon-filled {
+    display: none;
+}
+
+.input-group-text:hover .heart-icon {
+    display: none;
+}
+
+.input-group-text:hover .heart-icon-filled {
+    display: inline;
+}
+
+.input-group-text .fa-user:hover {
+    color: #007bff;
+    transform: scale(1.2);
+}
+
+/* İkon ile Yazı Arasında Boşluk */
+.input-group-text i {
+    margin-right: 8px;
+}
+
+/* Responsive Medya Sorguları */
+@media (max-width: 768px) {
+    .search-input {
+        width: 100%;
+        height: 38px;
+    }
+
+    .input-group-text i {
+        margin-right: 4px;
+    }
+}
